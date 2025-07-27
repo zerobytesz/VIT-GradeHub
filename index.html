@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VIT GradeHub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header">VIT GradeHub</header>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <button class="tab-button active" onclick="showTab('cgpa', event)">
+        CGPA Calculator
+      </button>
+      <button class="tab-button" onclick="showTab('gpa', event)">
+        Semester GPA Calculator
+      </button>
+      <button class="tab-button" onclick="showTab('contributors', event)">
+        Contributors
+      </button>
+    </div>
+
+    <!-- CGPA Calculator Tab -->
+    <div id="cgpa" class="tab-content" style="display: block">
+      <div class="container">
+        <h1>CGPA Calculator</h1>
+        <form id="cgpa-form">
+          <div id="semesters"></div>
+          <button type="button" onclick="addSemester()">+ Add Semester</button>
+          <button type="submit">Calculate CGPA</button>
+        </form>
+        <div id="result"></div>
+      </div>
+      <!-- Shared Info Section -->
+      <div id="shared-info" class="info-box"></div>
+    </div>
+
+    <!-- GPA Calculator Tab -->
+    <div id="gpa" class="tab-content" style="display: none">
+      <div class="container">
+        <h1>Semester GPA Calculator</h1>
+        <form id="gpa-form">
+          <div id="subjects"></div>
+          <button type="button" onclick="addSubject()">+ Add Subject</button>
+          <button type="submit">Calculate GPA</button>
+        </form>
+        <div id="gpa-result"></div>
+      </div>
+      <!-- Shared Info Section -->
+      <div id="shared-info-gpa" class="info-box"></div>
+    </div>
+
+    <!-- Contributors Tab -->
+    <div id="contributors" class="tab-content" style="display: none">
+      <div class="info-box contributors-box">
+        <h2>Contributors</h2>
+        <div class="contributors-list">
+          <div class="contributor-card">
+            <div class="avatar">RT</div>
+            <div class="contributor-details">
+              <span class="contributor-name">Raghav Tyagi</span>
+            </div>
+          </div>
+          <div class="contributor-card">
+            <div class="avatar">PT</div>
+            <div class="contributor-details">
+              <span class="contributor-name">Patil Tejas Ashok</span>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 24px">
+          Want to contribute? Email us at
+          <a href="mailto:vitcgpa@support.com">vitcgpa@support.com</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
