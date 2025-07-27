@@ -65,7 +65,8 @@ Semester GPA = (27 + 32 + 17) / 9 = 8.44</p>
 
 <hr/>
 
-<p><b>Made by students, for students. Contact:</b> vitcgpa@support.com</p>
+<p><b>Made by students, for students. Contact:</b> vitcgpacalculator@gmail.com
+</p>
 `;
 
 // Add a new semester row in CGPA section
